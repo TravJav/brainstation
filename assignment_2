@@ -1,0 +1,41 @@
+/*
+Exercise #1
+Create a for loop that prints out the numbers 1 to 100 in the console.
+*/
+
+var i;
+
+for(i = 0; i < 101; i++){
+
+console.log(" \n Number:"+ i );
+
+}
+
+/*
+Exercise #2
+Write a loop that makes seven calls to console.log to output the following triangle:
+
+#
+##
+###
+####
+#####
+######
+#######
+*/
+
+console.log(" \n See Exercise two below \n " );
+
+
+
+  var height = 7;
+
+
+
+for (var i = 1; i <= height; i++) {
+var row = '';
+for (var j = 1; j <= i; j++) {
+      row += '*';
+    }
+console.log(row);
+  }
