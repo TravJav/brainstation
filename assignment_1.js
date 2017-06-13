@@ -1,3 +1,4 @@
+
 /*
 Exercise #1
 Initialize an empty array below in the variable numbers.
@@ -17,18 +18,22 @@ The outputted value should be 9.
 */
 
 //2 & 3
-var total; // hold sum
+// hold sum
 
-for(var i=0;i<10;i++){
+for(var i=0;i<10 + 1;i++){
 //use the array push() method here.
-numbers.push[i];
+numbers.push(i);
 
 }
 
-console.log(" \n EXCERCISE 2 AND 3 \n The contents of the array:" + numbers);;
+console.log(" \n EXCERCISE 2 AND 3 \n The contents of the array: " + numbers);
 
-total = numbers[4] + numbers[7];
-console.log("\n EXERCISE 3 CONTINUED \n sum of numbers is"+ total); // print sum at positions defined in exercise
+
+total = numbers[3] + numbers[6];
+console.log("\n EXERCISE 3 CONTINUED \n sum of numbers is: "+ total); // print sum at positions defined in exercise
+
+
+
 
 
 
@@ -39,17 +44,38 @@ Exercise #4
 Use the console.log() function and the array .pop() to add all the values in the array.
 */
 
+// lets make a new array for the sake of organization
 
-var sum = 0;
+var our_array= [];
+//var sum = 0;
+
+for(counter = 0; counter < 10; counter++){
+our_array.push(counter);
+
+}
+console.log("\n I have: "+ counter +" in my array");
 
 
-while(numbers.length != 0){
 
-sum = numbers.pop();
-   
+// get total before we pop
+var total=0;
+for(var i in our_array) { total += our_array[i]; }
+
+console.log(" \n ---- our total is total is"+ total);
+
+while(our_array != 0){
+
+our_array.pop();
+
+}
+console.log("\n Lets hope there is not anything left is this pesky array: "+ our_array);
+
+if(our_array == 0){
+    console.log(" I see the pop function has done its job");
+} else if ( our_array > 0 ){
+    console.log("something is up with the pop method and has not cleared our array");
 }
 
-console.log(" \n EXERCISE 4 \n Sum of this array is:"+ sum);
 
 
 
@@ -71,6 +97,9 @@ car = Object();
 var colour = Object.defineProperty = "black";
 
 console.log(" \n EXERCISE 5 \n The colour of the car is:"+ colour);
+
+
+
 
 
 
